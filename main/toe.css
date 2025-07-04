@@ -64,11 +64,13 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 100;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #3C0C3E;
   font-style: italic;
+  text-align: justify;
+  width: 100%;
+  line-height: 1.6;
+  margin-bottom: 70px;
+  font-weight: 100;
+  color: #3C0C3E;
 }
 
 h4 {
