@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Holo-Anato-Gram</title>
+  <link rel="stylesheet" href="hci.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../index.html" class="sticky-back">Go back to the library</a>
+    <div id="top-left">
+        <p class="byline">created by</p>
+        <p class="author">NATALIIA KAMINSKAIA</p>
+      </div>
+    
+  <div class="top-image-container">
+    <img src="hci-assets/logo.png" alt="Top center image" class="no-zoom"/>
+  </div>
+
+  <div class="container">
+    <h1>HOLO-ANATO-GRAM</h1>
+    <h5>In Collaboration with Ferid Kendić</h5>
+
+    <h2>Project Overview</h2>
+    <h3>
+      Holo-Anato-Gram is a research and design project developed for the Human-Computer Interaction in Interactive Visualizations course. 
+      It investigates how pyramid holograms, combined with gesture-based interaction, can enhance the learning experience in subjects 
+      that rely on spatial understanding—such as anatomy, archaeology, and geology. The prototype presents anatomical models in three 
+      dimensions using a holographic display, allowing users to interact with them via hand gestures tracked by a Leap Motion sensor.
+    </h3>
+    <div class="video-wrapper">
+    <video class="rotated-video" controls>
+        <source src="hci-assets/IMG_7780.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+    <p class="caption">Prototype running with the Leap Motion and holographic display.</p>
+
+
+    <h2>Concept</h2>
+    <p>
+      The project responds to a common problem in higher education and museums: the limitations of two-dimensional learning in spatially complex fields. 
+      Traditional approaches often fail to support students’ spatial visualization and cognitive load, especially in domains like anatomy where layered, 
+      volumetric understanding is critical. The core goal of the project was to develop a functional, interactive system where users could rotate, explore, 
+      and label anatomical models in 3D, and to assess whether this format supports better engagement and comprehension.
+    </p>
+
+    <h2>Key Goals</h2>
+    <div class="keygoals">
+      <div class="goal">
+        <img src="hci-assets/star4.png" alt="Key Goal 1" class="no-zoom"/>
+        <h4>Design an intuitive UI adaptable for both educational and museum environments.</h4>
+      </div>
+      <div class="goal">
+        <img src="hci-assets/star5.png" alt="Key Goal 2" class="no-zoom"/>
+        <h4>Investigate whether spatial interaction improves user engagement and retention.</h4>
+      </div>
+      <div class="goal">
+        <img src="hci-assets/star7.png" alt="Key Goal 3" class="no-zoom"/>
+        <h4>Build an accessible 3D learning tool using a low-cost pyramid hologram and gesture interface.</h4>
+      </div>
+    </div>
+
+    <div class="side-by-side">
+        <div class="text">
+            <h2>Technology and Interaction</h2>
+            <p>
+            The prototype combines a Leap Motion controller, Unity 3D, and a custom-built pyramid hologram to visualize and control 3D models. 
+            An external screen provides an interface where users can switch models, select layers, and toggle anatomical labels. 
+            Gestures are tracked in real time to enable interaction without physical input devices. The system supports both adult and children modes, 
+            based on user personas created during the initial design phase.
+            </p>
+
+            <h2>Development Highlights</h2>
+            <p>
+            The project followed an iterative process, with four rounds of evaluations. Early testing used wireframes and a non-functional hologram 
+            to gather initial feedback. Later versions allowed real-time interaction with the holographic display.
+            Evaluators included both experts and users across age groups. Feedback led to improvements in gesture ergonomics, 
+            color accessibility, and instructional clarity.
+            While technical constraints required a switch from iPad to an external screen for the final prototype, 
+            the Leap Motion interface remained the central interaction modality.
+            </p>
+
+            <h2>Outcome and Impact</h2>
+            <p>
+            Evaluations showed overwhelmingly positive responses: users found the system easy to use, visually engaging, 
+            and effective in supporting exploratory learning. Participants expressed interest in using the holographic system frequently, 
+            both in educational and public exhibition contexts. The research suggests that even simple holography setups can meaningfully 
+            improve spatial learning by freeing up cognitive load and encouraging more active engagement with complex models.
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="hci-assets/instructions.png" alt="Leap Motion Instructions" class="zoomable" />
+            <p class="caption">Instructions for Leap Motion use<br> displayed in the user interface for adults.</p>
+        </div>
+    </div>
+
+    <h2>Supplement</h2>
+    <p>
+      <a href="https://drive.google.com/file/d/1US-9o8bOIWb57G2Sb4tKtXMdE7RRta8L/view?usp=sharing" target="_blank">View the paper on Google Drive</a>
+    </p>
+
+    <div class="figma-section">
+    <img src="hci-assets/figma_design.png" alt="Figma wireframes and design" class="zoomable" />
+    <p class="caption">
+        Wireframes and UI design created in 
+        <a href="https://www.figma.com/design/0XyBVMMs3uOD3KwFqSVca9/HCI?node-id=0-1&t=o0fesENlPTI4uP7X-1" target="_blank">Figma</a>
+    </p>
+    </div>
+
+    <footer>2025 Nataliia Kaminskaia. All rights reserved.</footer>
+  </div>
+
+  <script src="hci.js"></script>
+</body>
+</html>

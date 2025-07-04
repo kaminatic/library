@@ -1,0 +1,573 @@
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16;
+  background-color: #ffffff;
+  color: #3C0C3E;
+  overflow-x: hidden;
+}
+
+.page-container {
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+
+header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 96px;
+  margin: 0;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align both elements by their tops */
+  gap: 20px;
+}
+
+.project-title {
+  font-size: 96px;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1;
+}
+
+.collab-inline {
+  text-align: right;
+  font-weight: 100;
+  font-size: 32px;
+  font-style: italic;
+  color: #3C0C3E;
+  line-height: 1.3;
+  padding-top: 6px; /* ✅ Align visually with baseline of h1 */
+}
+
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-weight: 100;
+  font-style: normal;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3C0C3E;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #3C0C3E;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  color: #3C0C3E;
+}
+
+h5 {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3C0C3E;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+ul {
+  font-size: 17px;
+  line-height: 1.6;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.collab {
+  font-size: 32;
+  font-style: normal;
+  margin-top: 12px;
+  color: #3C0C3E;
+}
+
+
+.images-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.images-row img {
+  width: 48%;
+  height: auto;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.media-wide {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+}
+
+.media-half {
+  width: 48%;
+  height: auto;
+  margin: 1% 1% 20px 0;
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+video {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+footer {
+  border-top: 1px solid #888888;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 80px;
+  color: #888;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #444;
+}
+
+/* === Top Left === */
+#top-left {
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  padding-top: 3vh;
+  line-height: 1.32;
+  text-align: left;
+}
+#top-left .byline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: #3C0C3E;
+  margin: 0;
+}
+#top-left .author {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: #3C0C3E;
+  margin: 0;
+}
+.sticky-back {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 100;
+
+  padding: 10px 16px;
+  border: 2px solid #3b004f;
+  color: #3b004f;
+  background-color: white;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.sticky-back:hover {
+  background-color: #f0e6f5;
+}
+
+.top-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; /* same as .sticky-back top */
+  margin-bottom: 40px; /* space below the image */
+}
+
+.top-image-container img {
+  height: 40px; /* or whatever size looks best */
+  width: auto;
+  object-fit: contain;
+}
+
+.background-virus {
+  position: absolute;
+  top: -300px;
+  right: -400px; /* pushes the image out of the viewport on the right */
+  height: 120vh;  /* slightly larger than screen height */
+  opacity: 0.2;
+  transform: rotate(-25deg);
+  z-index: -1;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+.split-section {
+  display: flex;
+  gap: 81px;
+  margin-bottom: 80px;
+}
+
+.split-left {
+  width: 663px;
+}
+
+.split-right {
+  width: 514px;
+}
+
+.split-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  margin-bottom: 10px;
+}
+
+.split-right .caption {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  margin-top: 0;
+}
+
+.goals-section {
+  display: flex;
+  gap: 81px;
+  margin-bottom: 80px;
+  align-items: stretch; /* 🧠 forces same height for both columns */
+}
+
+.goals-section .wide-video {
+  width: 663px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goals-section .media-wide {
+  flex-grow: 1;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.goals-section .caption {
+  margin-top: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+}
+
+.goals-section .goals-list {
+  width: 514px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ vertically center text inside the video height */
+}
+
+.goals-list h2 {
+  font-size: 32px;
+  font-style: italic;
+  margin-bottom: 16px;
+  margin-top: -20px;
+}
+
+.goals-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 24px; /* ✅ larger bullet text */
+  line-height: 1.6;
+}
+
+.goals-list li {
+  margin-bottom: 18px;
+}
+
+.virus-lower {
+  position: absolute;
+  top: 582px;
+  left: -500.85px;
+
+  width: 1800px;
+  height: 2600px;
+
+  opacity: 0.1;
+  transform: rotate(-28deg);
+
+  z-index: -2;
+  pointer-events: none;
+}
+
+.tech-section {
+  display: flex;
+  gap: 81px;
+  margin-bottom: 80px;
+}
+
+.tech-section .split-left {
+  width: 663px;
+}
+
+.tech-section .split-right {
+  width: 514px;
+}
+
+.tech-section .split-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.tech-section .caption {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  margin-top: 0;
+}
+/* Container for heading + intro text */
+.development-intro {
+  margin-bottom: 60px;
+}
+
+/* Development section title */
+.development-section h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Paragraph under title */
+.development-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* The grid layout for the 3 blocks */
+.highlight-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.highlight-block {
+  width: 296px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon above each text block */
+.highlight-icon {
+  height: 60px;
+  margin-bottom: 0px;
+}
+
+/* The 24px body text in each block */
+.highlight-block p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #3C0C3E;
+  text-align: left;
+  max-width: 296px;
+}
+
+.media-grid-section {
+  padding: 0;
+}
+
+.media-grid-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+/* Each grid cell */
+.media-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+/* Keep video spacing consistent */
+.media-cell video {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Unified caption */
+.caption {
+  font-size: 16px;
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Red QR text block */
+.red-text-block p {
+  color: #3C0C3E;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+
+/* ONLY apply 100% width to generic images, exclude specific ones */
+.media-cell video,
+.media-cell img:not(.img-vertical):not(.img-horizontal) {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Just the wrapper and images */
+.image-pair-L {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.vertical-horizontal-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Use exact sizes of the images from your second screenshot */
+.img-vertical {
+  width: 259px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.img-horizontal {
+  width: 384px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Caption underneath both */
+.image-pair-L .caption {
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.media-video {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* keeps consistent height while scaling */
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+/* Lightbox styles */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox.hidden {
+  display: none;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #000000;
+  background-color: rgb(255, 255, 255, 0);  /* or white, if not part of black section */
+  margin: 0;
+  border: none;             /* ✅ Remove default borders */
+  box-shadow: none;         /* ✅ In case some box-shadow is added */
+  border-top: none;         /* ✅ Explicitly remove top divider */
+}
+
+.page-footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+

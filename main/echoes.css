@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  background-color: #FAFAFA;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 100;
+  color: #2C3273;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+    font-weight: 100;
+
+}
+
+h1 {
+  font-size: 96px;
+  text-transform: uppercase;
+  text-align: left;
+    font-weight: 100;
+
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-weight: 100;
+  
+}
+
+h3 {
+  font-size: 24px;
+  font-style: italic;
+  text-align: justify;
+  width: 100%;
+  line-height: 1.6;
+  margin-bottom: 70px;
+  font-weight: 100;
+}
+
+
+/* === Top Left === */
+#top-left {
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  padding-top: 3vh;
+  line-height: 1.32;
+  text-align: left;
+}
+#top-left .byline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: #2C3273;
+  margin: 0;
+}
+#top-left .author {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: #2C3273;
+  margin: 0;
+}
+.sticky-back {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 100;
+
+  padding: 10px 16px;
+  border: 2px solid #2C3273;
+  color: #2C3273;
+  background-color: #ffffff;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.sticky-back:hover {
+  background-color: rgb(183, 214, 255);
+}
+
+h4 {
+  font-size: 24px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.caption {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.top-image-container {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.media {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* Fix the side-by-side layout */
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Image block should not exceed half the container */
+.image-block {
+  flex: 1 1 40%;
+  max-width: 40%;
+  text-align: center;
+}
+
+.image-block .media {
+  width: 100%;
+  height: auto;
+}
+
+.image-block .caption {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Text block takes up remaining space */
+.text {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.keygoals {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 60px;
+  line-height: 0.5;
+
+}
+
+.goal {
+  width: 190px;
+  text-align: center;
+  line-height: 0.5;
+
+}
+
+.goal img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.goal p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 0;
+  line-height: 0.5;
+
+}
+
+a {
+  color: #2C3273;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 80px;
+}
+
+/* Decorative crystals */
+.crystal {
+  position: absolute;
+  height: auto;
+  opacity: 0.45;
+    z-index: -1;
+
+}
+
+.crystal-top-left {
+  top: -100px;
+  left: -300px;
+  width: 400px;
+}
+
+.crystal-top-right {
+  top: 1000px;
+  right: -400px;
+  width: 900px;
+  transform: rotate(-76deg);
+}
+
+.crystal-top-bt {
+  bottom: 0;
+  right: 1200px;
+  width: 900px;
+  transform: rotate(-76deg);
+}
+

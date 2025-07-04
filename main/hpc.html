@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biting Banter</title>
+  <link rel="stylesheet" href="hpc.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="../index.html" class="sticky-back">Go back to the library</a>
+  <div id="top-left">
+    <p class="byline">created by</p>
+    <p class="author">NATALIIA KAMINSKAIA</p>
+  </div>
+
+  <div class="container">
+    <h1>BITING BANTER</h1>
+    <h5>In Collaboration with Boet Bouten & Trent Eriksen</h5>
+
+    <h2>Project Overview</h2>
+    <h3>
+      Biting Banter is an experimental hardware project developed during the Hardware & Physical Computing course in the 
+      Media Technology MSc program at Leiden University. The system allows two users to communicate using Morse code—one 
+      by biting a custom mouthpiece, the other by receiving haptic feedback through a vibrating bracelet. The concept reimagines 
+      a haptic communication technique originally intended for deafblind users, but shifts its purpose toward a more playful and 
+      performative interaction.
+    </h3>
+
+    <img src="hpc-assets/photo1.jpg" alt="Mouthpiece Shell" class="top-media zoomable" />
+    <p class="caption">Hardware shell used during the project</p>
+
+    <div class="side-by-side">
+      <div class="text">
+        <h2>Concept</h2>
+        <p>
+          The system is built around a force-sensitive resistor embedded in a modified AirTag case. When bitten, 
+          the sensor registers short and long presses, which are converted into Morse code via custom Arduino 
+          code. A small screen displays the interpreted letters, while the receiving user feels the corresponding 
+          vibrations on their wrist. The prototype went through multiple iterations, including challenges with 
+          moisture protection, wire length, and signal clarity. Gesture thresholds were adjusted repeatedly to 
+          account for the different timing patterns between users, and the team collectively tested and fine-tuned 
+          every component together.
+        </p>
+        <h2>Reflection</h2>
+        <p>
+          While the idea originated from assistive communication research, our goal was not to replicate a 
+          practical tool but to open it up as a strange and tactile form of interaction. Accuracy is part of the 
+          challenge, but not the point—the system invites users to engage with unfamiliar rhythms and 
+          limitations. Most users quickly understood the logic, even without prior knowledge of Morse code, and 
+          learned to adapt their input style. Biting Banter is not about fluency, but about experimentation, 
+          attention, and the weird intimacy of sending a message through your teeth.
+        </p>
+      </div>
+
+      <div class="media-block">
+        <video controls>
+          <source src="hpc-assets/video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="caption">Live demo showing the sending and <br>receiving of messages via Morse biting</p>
+      </div>
+    </div>
+
+    <h2>Supplement</h2>
+    <p>
+      <a href="https://drive.google.com/file/d/1Y6F_qmfOGc1tJrmFr91EVVpAnPxdpobu/view?usp=sharing" target="_blank">
+        View the paper on Google Drive
+      </a>
+    </p>
+
+    <footer>2025 Nataliia Kaminskaia. All rights reserved.</footer>
+  </div>
+
+  <script src="hpc.js"></script>
+</body>
+</html>

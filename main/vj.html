@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VJing System</title>
+  <link rel="stylesheet" href="vj.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+<div id="lightbox" class="hidden">
+  <span id="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Enlarged view" />
+</div>
+<body>
+    <a href="../index.html" class="sticky-back">Go back to the library</a>
+    <div id="top-left">
+        <p class="byline">created by</p>
+        <p class="author">NATALIIA KAMINSKAIA</p>
+    </div>
+  
+    <a href="../index.html" class="sticky-back">Go back to the library</a>
+
+    <div class="page-container">
+        <h1>ENHANCING LIVE PERFORMANCES:<br> A CO-CREATIVE VJING SYSTEM USING GENERATIVE AI AND REAL-TIME INPUTS</h1>
+    </div>
+    
+    <div class="image-banner">
+        <img src="vj-assets/minecraft.png" alt="Minecraft still frames" class="banner-image no-zoom" />
+        <div class="overlay-text">In collaboration with <br> Sanne Dekker, Huien Tan <br> & Carita Muhli</div>
+    </div>
+  
+    <div class="page-container">
+        <span class="caption">Three still frames from the video output, prompt “Minecraft”, step ~0.6.</span>
+        <h2>Project overview</h2>
+        <h4>This project was developed as part of the Computational Creativity course in the Media Technology master’s program at Leiden University. It explores the creative potential of generative AI in live performances by developing a co-creative VJing system that generates visuals in response to real-time camera input and text prompts.</h4>
+        <div class="flex-section">
+            <div class="text-column">
+                <h2>Concept and Goals</h2>
+                <p>The system aims to support VJs and DJs by integrating generative AI into live visual performance workflows. It allows users to collaborate with AI to create visuals that evolve in real time. The goal was to investigate how such a system could enhance creativity, and how generative visuals produced through human-AI collaboration might introduce novel workflows and outputs within the context of VJing.</p>
+
+                <h2>System Design</h2>
+                <p>The system combines StreamDiffusion (a real-time diffusion model), camera input, and TouchDesigner. It processes live video, denoises it, and generates visual output based on text prompts and camera imagery. Users can adjust the similarity between the prompt and output using a “step” slider. A web interface was developed to make the system accessible to users unfamiliar with TouchDesigner.</p>
+
+                <h2>Evaluation</h2>
+                <p>The system was evaluated through in-person user tests and a questionnaire, focusing on Ritchie’s empirical criteria: novelty, typicality, and quality. Five participants with backgrounds in VJing, DJing, or visual art interacted with the system, entered prompts, adjusted parameters, and reflected on their experience.</p>
+            </div>
+
+            <div class="image-column">
+                <img src="vj-assets/UI.png" alt="UI interface screenshot" class="ui-image"/>
+            </div>
+        </div>
+
+        <h2>Outcome and Reflections</h2>
+        <p>Participants described the system as creatively inspiring, with visuals that were often considered novel and not achievable with existing tools. While some saw the AI as a creative partner, others viewed it as a tool. Limitations included frame rate constraints, prompt sensitivity, and restricted real-time manipulation. Nonetheless, the system showed potential for expanding visual creativity in live contexts and prompted reflections on the collaborative role of AI in artistic practice.</p>
+
+        <h4>To see a paper about this project, <a href ="https://drive.google.com/file/d/18P_ybjgA0Wu-ujxZVUqxklfqIBoAgHZA/view?usp=sharing" target="_blank">follow this link.</a></h4>
+    </div>
+    <!-- Gradient section -->
+    <div class="just-for-fun-section">
+    <div class="just-for-fun-inner">
+        <div class="just-for-fun-text">
+        <h2>Just for Fun</h2>
+        <p>
+            After the course ended, I kept using the VJing system—not for research, but just because it was fun.
+            I started playing around with prompts and camera inputs to create strange, sometimes absurd visuals.
+            These experiments had nothing to do with the accuracy of the original project goals.
+            They turned into a kind of visual haiku: deep-fried-like images, meta-memes, alienated in tone, but alive in a line of curiosity.
+        </p>
+        </div>
+    </div>
+
+    <div class="video-carousel-outer">
+        <div class="side-fade left-fade"></div>
+        <button class="carousel-btn bold-btn left-btn">&#x25C0;</button>
+
+        <div class="carousel-track wide-track">
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid.mp4" type="video/mp4" />
+        </video>
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid2.mp4" type="video/mp4" />
+        </video>
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid3.mp4" type="video/mp4" />
+        </video>
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid4.mp4" type="video/mp4" />
+        </video>
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid5.mp4" type="video/mp4" />
+        </video>
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid1.mp4" type="video/mp4" />
+        </video>
+        <video class="carousel-video" controls muted loop>
+            <source src="vj-assets/vid6.mp4" type="video/mp4" />
+        </video>
+        </div>
+
+        <button class="carousel-btn bold-btn right-btn">&#x25B6;</button>
+        <div class="side-fade right-fade"></div>
+    </div>
+
+    <footer style="color: white; text-align: center; margin-top: 60px;">
+        2025 Nataliia Kaminskaia. All rights reserved.
+    </footer>
+    </div>
+
+<script src="vj.js" defer></script>
+</body>
+</html>

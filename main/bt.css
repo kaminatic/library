@@ -1,0 +1,376 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.container {
+    width: 100%;
+    max-width: 1264px;
+    margin: auto;
+    padding: 60px 40px;
+    position: relative;
+}
+.section {
+    margin: 20px;
+    padding: 20px;
+}
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(64px, 96px, 106px);
+    margin: 0;
+    color: #835B0F;
+    font-weight: 100;
+}
+h2 {
+    font-size: 32px;
+    color: #835B0F;
+    margin: 0;
+}
+h3 {
+    font-size: 24;
+    font-style: italic;
+    color: #835B0F;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #835B0F;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+.gallery img, .gallery video {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#top-left {
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  padding-top: 3vh;
+  line-height: 1.32;
+  text-align: left;
+}
+#top-left .byline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: #835B0F;
+  margin: 0;
+}
+#top-left .author {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  color: #835B0F;
+  margin: 0;
+}
+.sticky-back {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 100;
+
+  padding: 10px 16px;
+  border: 2px solid #533a0b;
+  color: #835B0F;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.sticky-back:hover {
+  background-color: #f7d309;
+}
+.image-banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  display: block;
+}
+
+.content-align {
+  position: absolute;
+  bottom: clamp(30px, 10vh, 100px); /* pushes up from bottom instead of down from top */  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 10;
+}
+
+/* Default: content is full-width like the image */
+.content-align {
+  max-width: 100%;
+  margin: 0;
+}
+
+/* On medium and larger screens, match section width and center it */
+@media (min-width: 768px) {
+  .content-align {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.overlay-text {
+  font-style: italic;
+  font-size: clamp(16px, 2vw, 42px);
+  color: white;
+  left: 20%;
+}
+.flex-wrap-later {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.left-text {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.right-video {
+  flex: 1 1 35%;
+  min-width: 250px;
+  padding-top: 100px;
+  max-width: 100%;           /* allow full width when stacked */
+  margin-left: 0;            /* remove forced alignment */
+}
+
+.right-video video {
+  width: 100%;
+  height: auto;
+  max-width: 500px;          /* ✅ good size on large screens */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;        /* ✅ center the video */
+  border-radius: 8px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 6px;
+  color: #888;
+  text-align: center;
+}
+
+/* ✅ Responsive fix: stack video under text on small screens */
+@media (max-width: 768px) {
+  .flex-wrap-later {
+    flex-direction: column;
+  }
+
+  .right-video {
+    padding-top: 40px;
+  }
+
+  .right-video video {
+    max-width: 100%;
+  }
+}
+.night-block {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 60px 0;
+}
+
+.night-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.night-text {
+  flex: 1 1 55%;
+  min-width: 280px;
+}
+
+.nacht-image {
+  flex: 1 1 40%;
+  min-width: 280px;
+}
+
+.nacht-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.night-block h2 {
+  color: #f7d309;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.night-block p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.night-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.night-gallery img,
+.night-gallery video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.night-gallery figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.night-gallery figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 8px;
+  max-width: 700px;
+}
+
+.night-gallery-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  margin-top: 60px;
+}
+
+.left-tall-media {
+  flex: 0 0 auto;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-tall-media img {
+  max-height: 700px;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.left-tall-media figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.right-media-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 60%;
+  max-width: 100%;
+  gap: 20px;
+}
+
+
+.media-half {
+  flex: 1;
+  display: flex;
+}
+
+.media-half video,
+.media-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.night-gallery-row-wrapper {
+  max-width: 1264px; /* match your .container size */
+  margin: 0 auto;
+  padding: 0px 40px;
+  margin-bottom: auto;
+}
+.hidden {
+  display: none !important;
+}
+
+#lightbox {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+
+.page-footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #999;
+  background-color: #000; /* or use white if you want it separate from the black block */
+}
+
+.page-footer p {
+  margin: 0;
+}

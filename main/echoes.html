@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Echoes of Invisible</title>
+  <link rel="stylesheet" href="echoes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="../index.html" class="sticky-back">Go back to the library</a>
+  <div id="top-left">
+    <p class="byline">created by</p>
+    <p class="author">NATALIIA KAMINSKAIA</p>
+  </div>
+
+  <div class="container">
+    <img src="echo-assets/crystal1.png" alt="" class="crystal crystal-top-left" />
+    <img src="echo-assets/crystal3.png" alt="" class="crystal crystal-top-right" />
+    <img src="echo-assets/crystal2.png" alt="" class="crystal crystal-top-bt" />
+
+    <h1>ECHOES OF INVISIBLE</h1>
+
+    <h2>Project Overview</h2>
+    <h3>
+      <em>Echoes of Invisible</em> is an interactive sonic environment developed as a final project for the Sound, Space and Interaction course. 
+      This project combines augmented reality (AR) and spatial audio to create a unique auditory experience, guiding exploration solely through 
+      sound without visible interfaces. Built using Unity MARS and Pure Data (PD), the system invites participants to navigate a space where sound 
+      responds to body movement, proximity, and interaction with invisible virtual objects.
+    </h3>
+
+    <div class="side-by-side">
+          <div class="image-block">
+            <img src="echo-assets/gif.gif" alt="Crystal interaction" class="media" />
+            <p class="caption">In this environment, blue crystals represent virtual sound-generating objects, while white cubes attached to the user’s body trigger interactions.</p>
+          </div>
+      <div class="text">
+        <h2>Concept and Goals</h2>
+        <p>
+          The aim of the project was to explore how sound alone could construct a sense of environment, presence, and interaction in an augmented space. 
+          Using AR and spatialized audio, the work avoids screen-based interfaces entirely, instead prompting users to move through and “listen into” space. 
+          The design posed both conceptual and technical challenges, especially around creating invisible interactions that still felt intentional and immersive.
+        </p>
+
+        <h2 class="key-goals-title">Key goals</h2>
+        <div class="keygoals">
+          <div class="goal">
+            <img src="echo-assets/crystal1.png" alt="" />
+            <h4>Build an environment where users are guided by spatial sound rather than visuals.</h4>
+          </div>
+          <div class="goal">
+            <img src="echo-assets/cube0.png" alt="" />
+            <h4>Integrate MARS with PD for real-time sound feedback based on interaction.</h4>
+          </div>
+          <div class="goal">
+            <img src="echo-assets/crystal3.png" alt="" />
+            <h4>Design a dynamic sonic language that reacts meaningfully to user movement.</h4>
+          </div>
+        </div>
+        <h2>Technology and Interaction</h2>
+        <p>
+          The environment was built using Unity MARS for AR tracking and Pure Data (PD) for dynamic sound generation. A TCP connection allowed Unity 
+          to send interaction data—like movement and collisions—to PD in real time. Ambient sounds were shaped by continuous filters reacting to user 
+          presence, while collisions with virtual objects triggered distinct, modulated sounds. Spatial effects like reverb were added to give the audio 
+          depth and physicality. The result was a shifting soundscape that responded directly to how participants moved through the space.
+        </p>
+      </div>
+    </div>
+
+
+
+    <h2>Reflection</h2>
+    <p>
+      Developing Echoes of Invisible involved solving a number of technical challenges, particularly in connecting Unity and PD and stabilizing AR 
+      tracking without visual cues. The process required extensive debugging, experimentation, and tuning of both sound and behavior. Despite the 
+      frustration that came with frequent testing and unstable builds, the project offered valuable lessons in designing interaction through absence: 
+      what happens when a system responds without being seen. The final experience foregrounds sound as a primary mode of navigation—subtle, ambient, 
+      and occasionally surprising.
+    </p>
+
+    <div class="media-block">
+      <video class="media" controls>
+        <source src="echo-assets/video0.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p class="caption">In this environment, blue crystals represent virtual sound-generating objects, while white cubes attached to the user’s body trigger interactions.</p>
+    </div>
+
+
+    <h2>Supplement</h2>
+    <p>
+      To see a short paper about this project, <a href="https://drive.google.com/file/d/1j6PZd0UlcxUoj0fJ-wl-1U1OIuQ1HaUZ/view?usp=sharing" target="_blank">follow this link</a>.
+    </p>
+
+    <footer>2025 Nataliia Kaminskaia. All rights reserved.</footer>
+  </div>
+</body>
+</html>
